@@ -1,0 +1,21 @@
+mode: scan
+dry_run: true
+
+venues:
+  polymarket:
+    enabled: true
+    poll_interval_seconds: 30
+
+strategies:
+  yes_no:
+    raw_total_threshold: 0.97
+    min_liquidity: 50
+
+capital:
+  notional_per_trade: 100
+
+resolution:
+  allow_flagged: false
+
+logging:
+  save_snapshots: true
